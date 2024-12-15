@@ -1,0 +1,178 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+header {
+    background-color: #d4edda; 
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #155724;
+}
+
+main {
+    padding: 20px;
+}
+
+main h2 {
+    color: #155724;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #d4edda;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: #155724; 
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 10px 0;
+}
+
+button:hover {
+    background-color: #0d3f1e; 
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+form input,
+form textarea,
+form button {
+    width: calc(50% - 20px);
+    padding: 10px;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form textarea {
+    width: calc(100% - 20px);
+    height: 100px;
+    resize: none;
+}
+
+form button {
+    width: auto;
+}
+
+#dogs-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+.dog-card {
+    position: relative;
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.dog-extra-info {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.dog-card:hover {
+    width: 300px;
+    padding: 20px;
+}
+
+.dog-card:hover .dog-extra-info {
+    opacity: 1;
+    max-height: 200px;
+}
+
+.dog-card {
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dog-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.dog-card h3 {
+    margin: 20px 0 10px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.dog-card p {
+    margin: 0 0 15px;
+    color: #555;
+    font-size: 0.9em;
+}
+
+.delete-button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}
+
+@media (max-width: 768px) {
+    form input,
+    form textarea,
+    form button {
+        width: calc(100% - 20px);
+    }
+
+    .dog-card {
+        max-width: 100%;
+    }
+}

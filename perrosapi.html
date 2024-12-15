@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEVF Dogs API 🐶</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>DEVF Dogs API 🐾</h1>
+    </header>
+    <main>
+        <section id="dogs-list">
+            <h2>Lista de Perros 🐕</h2>
+            <button id="fetch-dogs">Obtener Perros</button>
+            <div id="dogs-container"></div>
+        </section>
+        <section id="add-dog">
+            <h2>Agregar un Nuevo Perro 🐾</h2>
+            <form id="add-dog-form">
+                <input type="text" name="name" placeholder="Nombre" required>
+                <input type="text" name="breed" placeholder="Raza" required>
+                <input type="url" name="image" placeholder="URL de Imagen" required>
+                <input type="text" name="color" placeholder="Color">
+                <input type="number" name="age" placeholder="Edad">
+                <input type="text" name="favoriteToy" placeholder="Juguete Favorito">
+                <input type="text" name="personality" placeholder="Personalidad">
+                <textarea name="bio" placeholder="Biografía"></textarea>
+                <button type="submit">Agregar Perro</button>
+            </form>
+        </section>
+        <ul id="dogs-list">
+        </ul>
+        
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
